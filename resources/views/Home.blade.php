@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Left Sidebar</title>
+    <title>PatRoll Home</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Style for sidebar */
@@ -44,7 +44,7 @@
 <!-- Sidebar -->
 <div class="sidebar">
     <a href="#">Dashboard</a>
-    <a href="#">Users</a>
+    <a href="#">Employee</a>
     <a href="#">Settings</a>
     <!-- Button to toggle sidebar -->
     <button class="btn btn-light" onclick="toggleSidebar()">Toggle Sidebar</button>

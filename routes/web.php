@@ -3,6 +3,8 @@
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\SignUpController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\employeesController;
+
 
 Route::get('/', function () {
     return view('Login');
@@ -25,3 +27,10 @@ Route::get('/home', function () {
 Route::get('signup', function () {
     return view('Signup');
 });
+Route::get('emplist', [employeesController::class, 'index']);
+
+// Route to display the employee list
+Route::get('employees', [EmployeesController::class, 'index'])->name('employees.index');
+
+// Route to handle the addition of a new employee
+Route::post('employees', [EmployeesController::class, 'store'])->name('employees.store');
