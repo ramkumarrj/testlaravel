@@ -1,0 +1,80 @@
+.head-title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+/* Style for sidebar */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00b7ff;
+    padding-top: 20px;
+}
+
+/* Style for sidebar links */
+.sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar.hidden {
+    display: none;
+}
+
+/* Style for sidebar links on hover */
+.sidebar a:hover {
+    background-color: #ffffff;
+}
+
+/* Style for content */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.btntogsidebar {
+    background-color: #302e2e;
+    border: groove;
+    color: rgb(167, 242, 245);
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    position: fixed;
+    display: block;
+}
+
+.btntogsidebar:hover {
+    background-color: #00ccff;
+    color: black;
+}
+
+#tog {
+    position: fixed;
+    display: block;
+}
+
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}

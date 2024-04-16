@@ -1,16 +1,20 @@
 @extends('layouts.header')
 
-@section('title', 'Employee List')
 
-<div class="row mb-3">
-    <div class="col-md-12">
-        <button class="btn btn-primary float-right" data-toggle="modal" data-target="#addEmployeeModal">Add Employee</button>
-    </div>
-</div>
-<div class="content-title">
+<link rel="stylesheet" href="{{ asset('css/common.css') }}">
+<script src="{{ asset('js/common.js') }}"></script>
+
+<div class="head-title">
     <h1>Employee List</h1>
 </div>
+      
+<div class="row mb-3">
+    <div class="col-md-12">
+        <button class="btn btn-primary float-md-end">Add Employee</button>
+    </div>
+</div>
 
+</br>
 <table class="table">
     <thead>
         <tr>
@@ -130,15 +134,5 @@
         </div>
     </div>
 </div>
-
-<!-- Script to toggle sidebar -->
-<script>
-    function toggleSidebar() {
-        alert("testing");
-        var sidebar = document.querySelector('.sidebar');
-        sidebar.classList.toggle('hidden');
-    }
-</script>
-
 
 @extends('layouts.footer')

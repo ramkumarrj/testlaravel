@@ -1,51 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <aside>
-    <style>
-        /* Style for sidebar */
-        .sidebar {
-            height: 100%;
-            width: 250px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #333;
-            padding-top: 20px;
-        }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
 
-        /* Style for sidebar links */
-        .sidebar a {
-            padding: 10px;
-            text-decoration: none;
-            font-size: 18px;
-            color: white;
-            display: block;
-            transition: 0.3s;
-        }
+<body>
 
-        /* Style for sidebar links on hover */
-        .sidebar a:hover {
-            background-color: #555;
-        }
-
-        /* Style for content */
-        .content {
-            margin-left: 250px;
-            padding: 20px;
-        }
-    </style>
-    <!-- Sidebar -->
     <div class="sidebar">
-        <a href="#">Dashboard</a>
-        <a href="/emplist   ">Employee</a>
+        </br>
+        </br>
+        <a href="/home">Home</a>
+        <a href="/emplist">Employee</a>
         <a href="#">Settings</a>
         <!-- Button to toggle sidebar -->
-        <button class="btn btn-light" onclick="toggleSidebar()">Toggle Sidebar</button>
     </div>
-    </aside>
+    <div id="tog">
+        <button class="btn btn-primary float-md-start" onclick="toggleSidebar()">Toggle Sidebar</button>
+    </div>
+
+<!-- <div class="head" style="padding:20px">
+     @section('content-title', 'Employee List')
+  </div> -->
+
