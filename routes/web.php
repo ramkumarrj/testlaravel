@@ -27,6 +27,7 @@ Route::get('/home', function () {
 Route::get('signup', function () {
     return view('Signup');
 });
+
 Route::get('emplist', [employeesController::class, 'index']);
 
 // Route to display the employee list

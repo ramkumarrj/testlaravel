@@ -1,9 +1,8 @@
-@extends('layouts.header')
+@extends('layouts.layout')
 
-
-
-<link rel="stylesheet" href="{{ asset('css/common.css') }}">
-<script src="{{ asset('js/common.js') }}"></script>
+<div class="head-title">
+    <h1>BlindMatrix</h1>
+</div>
 
 
 

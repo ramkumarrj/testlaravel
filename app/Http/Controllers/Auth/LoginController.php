@@ -21,8 +21,7 @@ class LoginController extends Controller
             // Authentication passed...
             return redirect()->intended('/home');
         }
-        dd('hi');
-
+        
         // Authentication failed...
         return back()->withErrors(['email' => 'Invalid credentials']);
     }
