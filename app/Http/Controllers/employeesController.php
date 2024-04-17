@@ -22,9 +22,20 @@ class EmployeesController extends Controller
     {
         // Validate input data
         $validatedData = $request->validate([
+            'emp_id' => 'required|integer|unique',
+            'uid' => 'required|integer|unique',
             'name' => 'required|string|max:255',
             'department' => 'required|string|max:255',
             'position' => 'required|string|max:255',
+            'address' => 'string|max:255',
+            'mobile' => 'required|integer|max:12',
+            'emergency_contact' => 'required|integer|max:12',
+            'personal_mail' => 'required|email|unique',
+            'official_mail' => 'email|unique',
+            'doj' => 'nullable|date',
+            'doe' => 'nullable|date',
+            'blood_group' => 'string'
+
             // Add validation rules for other fields
         ]);
 

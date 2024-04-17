@@ -20,13 +20,18 @@ Route::post('signup', [SignUpController::class,'signup'])->name('signup');
 // });
 
 
-Route::get('/home', function () {
+Route::get('home', function () {
     return view('Home');
 });
 
 Route::get('signup', function () {
     return view('Signup');
 });
+
+Route::get('addemplooye', function () {
+    return view('Addemp');
+});
+
 
 Route::get('emplist', [employeesController::class, 'index']);
 

@@ -35,6 +35,13 @@
                 <span class="tooltip">Home</span>
             </li>
             <li>
+                <a href="/addemplooye">
+                    <i class="bx bx-book-open before"></i>
+                    <span class="links_name">Add Emp</span>
+                </a>
+                <span class="tooltip">AddEmp</span>
+            </li>
+            <li>
                 <a href="/emplist">
                     <i class="bx bx-user"></i>
                     <span class="links_name">User</span>
