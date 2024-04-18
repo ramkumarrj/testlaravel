@@ -31,7 +31,9 @@ Route::get('signup', function () {
 Route::get('addemplooye', function () {
     return view('Addemp');
 });
-
+Route::get('calendar', function(){
+    return view('calendar');
+});
 
 Route::get('emplist', [employeesController::class, 'index']);
 

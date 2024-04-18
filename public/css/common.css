@@ -288,10 +288,13 @@
 }
 
 .head-title {
+  position: fixed;
+  width: 100%;
   text-align: center;
   font-weight: bolder;
   font-size: 30px;
 }
+
 
 .table {
   margin-left: 10%;
@@ -331,6 +334,7 @@ th {
   color: rgb(0, 0, 0);
 }
 
+/*################ Add Employee ################*/
 /* Style for the container */
 .container {
   display: flex;
@@ -342,25 +346,63 @@ th {
 
 /* Style for the form */
 .form-container {
-  width: 1000px;
-  height: 700px;
+  width: 1460px;
+  height: 850px;
   padding: 20px;
   background-color: #00ecfd;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-group {
-width: 200px;
-margin: 0 auto;
-
-float: left;
+.head-title-addemp {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
 }
 
-.form-control{
-  float: right;
+.addemp-group {
+  margin-left: 62px;
+  margin: 5px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.form-label{
-  float: left;
+/* .addemp-input {
+float: right;
+}   */
+
+.addemp-label {
+  position: relative;
+  font-size: 22px;
+  padding-right:10px;
 }
+
+/*##############################################*/
+
+/*################ Caledor Only ################*/
+.g-calendar {
+  width: 1460px;
+  height: 850px;
+}
+
+/* Style for the container */
+.g-calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Style for the form */
+.g-calendar-form-container {
+  width: 1500px;
+  height: 900px;
+  padding: 20px;
+  background-color: #00ecfd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*##############################################*/

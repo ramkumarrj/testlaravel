@@ -1,11 +1,11 @@
 @include('layouts.header')
 <!DOCTYPE html>
-<!-- Website - www.codingnepalweb.com -->
+
 <html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8" />
-    <title>Responsive Sidebar Menu HTML CSS | CodingNepal</title>
+    <title>Pay Roll</title>
     <link rel="stylesheet" href="{{ asset('css/common.css') }}">
     <!-- Boxicons CDN Link -->
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
@@ -54,6 +54,13 @@
                     <span class="links_name">Leave</span>
                 </a>
                 <span class="tooltip">Leave</span>
+            </li>
+            <li>
+                <a href="/calendar">
+                    <i class="bx bx-chat"></i>
+                    <span class="links_name">Calendar</span>
+                </a>
+                <span class="tooltip">Calendar</span>
             </li>
         </ul>
     </div>
